@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Users = require('../../../models/User');
+const Users = require('../../models/User');
 const {verifyToken } = require('./jwt');
 
 router.get('/', verifyToken, (req, res) => {

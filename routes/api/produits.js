@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Produits = require('../../../models/Produit');
+const Produits = require('../../models/Produit');
 const jwtSecret = 'ma_cle_secrete'; 
 const { verifyToken } = require('./jwt');
 
